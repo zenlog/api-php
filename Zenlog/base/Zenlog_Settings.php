@@ -4,7 +4,7 @@
  *
  */
 
-class ZenlogSettings {
+class Zenlog_Settings {
     const ZENLOG_ORIGIN_ZIP_CODE = '04037-002';
 
     const ZENLOG_DEFAULT_WIDTH = 1;
