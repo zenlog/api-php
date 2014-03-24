@@ -22,9 +22,7 @@
         "bin-dir": "bin"
     },
     "autoload": {
-        "psr-0": {
-            "Zenlog": "model/"
-        }
+        "psr-0": { "Zenlog\\": ["/", "/model/"] }
     },
     "version": "0.2.2"
 }
