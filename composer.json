@@ -22,7 +22,7 @@
         "bin-dir": "bin"
     },
     "autoload": {
-        "psr-0": { "": ["base/", "model/"] }
+        "classmap": [ "Zenlog/" ]
     },
     "version": "0.2.2"
 }
