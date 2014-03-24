@@ -78,7 +78,7 @@ class Zenlog
     public function getEstimatedDaysForDelivery()
     {
         if (is_null($this->estimatedDaysForDelivery)) {
-            return ZenlogSettings::ZENLOG_DEFAULT_ESTIMATED_DELIVERY;
+            return Zenlog_Settings::ZENLOG_DEFAULT_ESTIMATED_DELIVERY;
         } else {
             return $this->estimatedDaysForDelivery;
         }
@@ -90,7 +90,7 @@ class Zenlog
      */
     public function getShippingInsuranceAmount()
     {
-        return Red_Logistics_Settings::ZENLOG_DEFAULT_INSURANCE;
+        return Zenlog_Settings::ZENLOG_DEFAULT_INSURANCE;
     }
 
 }
