@@ -4,6 +4,8 @@
  *
  */
 
+namespace Zenlog;
+
 class Zenlog_Model_Volume {
     public $weight;
     public $volume_type;

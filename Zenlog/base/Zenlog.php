@@ -4,6 +4,8 @@
  *
  */
 
+namespace Zenlog;
+
 class Zenlog
 {
 
