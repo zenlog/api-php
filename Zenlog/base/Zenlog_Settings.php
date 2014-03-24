@@ -4,8 +4,6 @@
  *
  */
 
-namespace Zenlog;
-
 class Zenlog_Settings {
     const ZENLOG_ORIGIN_ZIP_CODE = '04037-002';
 

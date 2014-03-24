@@ -4,11 +4,8 @@
  *
  */
 
-namespace Zenlog;
-
 class Zenlog
 {
-
     /**
      * @var int
      */
@@ -16,12 +13,15 @@ class Zenlog
     private $username = null;
     private $password = null;
 
-    function __construct($password = null, $username = null)
+    /**
+     * @param null $password
+     * @param null $username
+     */
+    public function __construct($password = null, $username = null)
     {
         $this->password = $password;
         $this->username = $username;
     }
-
 
     /**
      * @param Zenlog_Model_Request $data
@@ -30,6 +30,7 @@ class Zenlog
     public function calculateShippingCost(Zenlog_Model_Request $data)
     {
         $bestOption = null;
+
         try {
             $body = json_encode($data);
             $s = curl_init();
@@ -60,6 +61,7 @@ class Zenlog
         } catch (Exception $e) {
             $bestOption = null;
         }
+
         if (is_null($bestOption)) {
             $minPrice = null;
         } else {
@@ -75,10 +77,12 @@ class Zenlog
      */
     public function getEstimatedDaysForDelivery()
     {
-        if (is_null($this->estimatedDaysForDelivery))
+        if (is_null($this->estimatedDaysForDelivery)) {
             return ZenlogSettings::ZENLOG_DEFAULT_ESTIMATED_DELIVERY;
-        else
+        } else {
             return $this->estimatedDaysForDelivery;
+        }
+
     }
 
     /**
@@ -88,4 +92,5 @@ class Zenlog
     {
         return Red_Logistics_Settings::ZENLOG_DEFAULT_INSURANCE;
     }
+
 }

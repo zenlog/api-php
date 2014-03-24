@@ -4,8 +4,7 @@
  *
  */
 
-set_include_path(get_include_path().':../../');
-require_once 'init.php';
+require_once 'spoon.php';
 
 $volume = new Zenlog_Model_Volume();
 $volume->weight = 10;
