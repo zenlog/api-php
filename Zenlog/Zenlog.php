@@ -1,9 +1,10 @@
 <?php
 /**
- * @author eSprinter (it@e-sprinter.com.br)
+ * @author Zenlog (it@zenlog.com.br)
+ *
  */
 
-class ESprinter
+class Zenlog
 {
 
     /**
@@ -21,10 +22,10 @@ class ESprinter
 
 
     /**
-     * @param ESprinter_Model_Request $data
+     * @param Zenlog_Model_Request $data
      * @return float
      */
-    public function calculateShippingCost(ESprinter_Model_Request $data)
+    public function calculateShippingCost(Zenlog_Model_Request $data)
     {
         $bestOption = null;
         try {
@@ -73,7 +74,7 @@ class ESprinter
     public function getEstimatedDaysForDelivery()
     {
         if (is_null($this->estimatedDaysForDelivery))
-            return ESprinterSettings::ESPRINTER_DEFAULT_ESTIMATED_DELIVERY;
+            return ZenlogSettings::ZENLOG_DEFAULT_ESTIMATED_DELIVERY;
         else
             return $this->estimatedDaysForDelivery;
     }
@@ -83,6 +84,6 @@ class ESprinter
      */
     public function getShippingInsuranceAmount()
     {
-        return Red_Logistics_Settings::ESPRINTER_DEFAULT_INSURANCE;
+        return Red_Logistics_Settings::ZENLOG_DEFAULT_INSURANCE;
     }
 }

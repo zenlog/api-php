@@ -1,17 +1,18 @@
 <?php
 /**
- * @author eSprinter (it@e-sprinter.com.br)
+ * @author Zenlog (it@zenlog.com.br)
+ *
  */
 
-class ESprinterSettings {
-    const ESPRINTER_ORIGIN_ZIP_CODE = '04037-002';
+class ZenlogSettings {
+    const ZENLOG_ORIGIN_ZIP_CODE = '04037-002';
 
-    const ESPRINTER_DEFAULT_WIDTH = 1;
-    const ESPRINTER_DEFAULT_HEIGHT = 1;
-    const ESPRINTER_DEFAULT_LENGTH = 1;
-    const ESPRINTER_DEFAULT_INSURANCE = 0;
-    const ESPRINTER_DEFAULT_ESTIMATED_DELIVERY = 10;
+    const ZENLOG_DEFAULT_WIDTH = 1;
+    const ZENLOG_DEFAULT_HEIGHT = 1;
+    const ZENLOG_DEFAULT_LENGTH = 1;
+    const ZENLOG_DEFAULT_INSURANCE = 0;
+    const ZENLOG_DEFAULT_ESTIMATED_DELIVERY = 10;
 
-    const ESPRINTER_VOLUME_BOX = "BOX";
-    const ESPRINTER_VOLUME_ENVELOPE = "ENVELOPE";
+    const ZENLOG_VOLUME_BOX = "BOX";
+    const ZENLOG_VOLUME_ENVELOPE = "ENVELOPE";
 }
