@@ -46,6 +46,12 @@ Up-to-date documentation at: http://docs.zenlog.com.br
 
 Releases
 --------------------
+## 0.2.3
+*2014-03-24 | Pablo del Vecchio*
+
+- changed base folder
+
+
 ## 0.2.2
 *2014-03-18 | Pablo del Vecchio*
 
